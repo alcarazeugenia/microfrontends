@@ -157,7 +157,7 @@ export default function Pricing() {
 					color="textPrimary"
 					gutterBottom
 				>
-					Pricing
+					Made on React too, another route inside "Marketing" project
 				</Typography>
 				<Typography
 					variant="h5"

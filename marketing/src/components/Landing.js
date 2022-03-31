@@ -79,7 +79,8 @@ export default function Album() {
 							color="textPrimary"
 							gutterBottom
 						>
-							Home Page
+							Im made on react too, but my root project is
+							"Marketing"
 						</Typography>
 						<Typography
 							variant="h5"

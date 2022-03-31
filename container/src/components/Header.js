@@ -79,7 +79,7 @@ export default function Header({ signedIn, onSignOut }) {
 						component={RouterLink}
 						to="/"
 					>
-						App
+						I'm made on react my root project is "Container"
 					</Typography>
 					<Button
 						color="primary"
