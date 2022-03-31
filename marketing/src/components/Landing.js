@@ -79,7 +79,7 @@ export default function Album() {
 							color="textPrimary"
 							gutterBottom
 						>
-							Im made on react too, but my root project is
+							Im made on React too, but my root project is
 							"Marketing"
 						</Typography>
 						<Typography
