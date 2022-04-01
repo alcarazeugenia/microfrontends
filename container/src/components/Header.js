@@ -79,6 +79,9 @@ export default function Header({ signedIn, onSignOut }) {
 						component={RouterLink}
 						to="/"
 					>
+						Click me to go to main
+					</Typography>
+					<Typography variant="h6" color="inherit" noWrap>
 						I'm made on React my root project is "Container"
 					</Typography>
 					<Button
