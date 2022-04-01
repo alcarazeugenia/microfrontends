@@ -6,6 +6,7 @@ import {
 	StylesProvider,
 	createGenerateClassName,
 } from "@material-ui/core/styles";
+
 const DashboardLazy = lazy(() => import("./components/DashboardApp"));
 
 const generateClassName = createGenerateClassName({
@@ -20,7 +21,6 @@ export default () => {
 				<Suspense fallback="...loading">
 					<Switch>
 						<Route path="/dashboard" component={DashboardLazy} />
-						<Route path="/" component={MarketingApp} />
 					</Switch>
 				</Suspense>
 				<MarketingApp />
