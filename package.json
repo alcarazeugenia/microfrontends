@@ -1,0 +1,14 @@
+{
+  "name": "microfrontends",
+  "version": "1.0.0",
+  "scripts": {
+    "run:auth":"npm run start --prefix ./auth/",
+    "run:container":"npm run start --prefix ./container/",
+    "run:dashboard":"npm run start --prefix ./dashboard/",
+    "run:marketing":"npm run start --prefix ./marketing/",
+    "dev": "concurrently \"npm run run:auth\" \"npm run run:container\" \"npm run run:dashboard\" \"npm run run:marketing\" "
+  },
+  "dependencies": {
+    "concurrently": "^7.1.0"
+  }
+}
