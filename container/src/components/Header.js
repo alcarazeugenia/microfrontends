@@ -54,11 +54,11 @@ const useStyles = makeStyles((theme) => ({
 	},
 }));
 
-export default function Header({ signedIn, onSignOut }) {
+export default function Header({ isSignedIn, onSignOut }) {
 	const classes = useStyles();
 
 	const onClick = () => {
-		if (signedIn && onSignOut) {
+		if (isSignedIn && onSignOut) {
 			onSignOut();
 		}
 	};
@@ -79,20 +79,20 @@ export default function Header({ signedIn, onSignOut }) {
 						component={RouterLink}
 						to="/"
 					>
-						Click me to go to main
+						App - Click here to go back to home
 					</Typography>
 					<Typography variant="h6" color="inherit" noWrap>
-						I'm made on React my root project is "Container"
+						Header made on React, root project "Container"
 					</Typography>
 					<Button
 						color="primary"
 						variant="outlined"
 						className={classes.link}
 						component={RouterLink}
-						to={signedIn ? "/" : "/auth/signin"}
+						to={isSignedIn ? "/" : "/auth/signin"}
 						onClick={onClick}
 					>
-						{signedIn ? "Logout" : "Login"}
+						{isSignedIn ? "Logout" : "Login"}
 					</Button>
 				</Toolbar>
 			</AppBar>

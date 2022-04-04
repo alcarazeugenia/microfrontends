@@ -1,37 +1,17 @@
 import React from "react";
 import Button from "@material-ui/core/Button";
-import Card from "@material-ui/core/Card";
-import CardActions from "@material-ui/core/CardActions";
-import CardContent from "@material-ui/core/CardContent";
-import CardMedia from "@material-ui/core/CardMedia";
 import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
-import MaterialLink from "@material-ui/core/Link";
-import { Link } from "react-router-dom";
 
-function Copyright() {
-	return (
-		<Typography variant="body2" color="textSecondary" align="center">
-			{"Copyright © "}
-			<MaterialLink component={Link} to="/" color="inherit">
-				Your Website
-			</MaterialLink>{" "}
-			{new Date().getFullYear()}
-			{"."}
-		</Typography>
-	);
-}
+import { Link } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
 	"@global": {
 		a: {
 			textDecoration: "none",
 		},
-	},
-	icon: {
-		marginRight: theme.spacing(2),
 	},
 	heroContent: {
 		backgroundColor: theme.palette.background.paper,
@@ -40,28 +20,7 @@ const useStyles = makeStyles((theme) => ({
 	heroButtons: {
 		marginTop: theme.spacing(4),
 	},
-	cardGrid: {
-		paddingTop: theme.spacing(8),
-		paddingBottom: theme.spacing(8),
-	},
-	card: {
-		height: "100%",
-		display: "flex",
-		flexDirection: "column",
-	},
-	cardMedia: {
-		paddingTop: "56.25%", // 16:9
-	},
-	cardContent: {
-		flexGrow: 1,
-	},
-	footer: {
-		backgroundColor: theme.palette.background.paper,
-		padding: theme.spacing(6),
-	},
 }));
-
-const cards = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
 export default function Album() {
 	const classes = useStyles();
@@ -78,29 +37,25 @@ export default function Album() {
 							color="textPrimary"
 							gutterBottom
 						>
-							Im made on React too, but my root project is
-							"Marketing"
+							Home Page made on React
 						</Typography>
-
+						<Typography
+							variant="h5"
+							align="center"
+							color="textSecondary"
+							paragraph
+						>
+							My Root project is "Marketing"
+						</Typography>
 						<div className={classes.heroButtons}>
-							<Grid container spacing={2} justifyContent="center">
+							<Grid container spacing={2} justify="center">
 								<Grid item>
 									<Link to="/second">
 										<Button
 											variant="contained"
 											color="primary"
 										>
-											2nd React Page
-										</Button>
-									</Link>
-								</Grid>
-								<Grid item>
-									<Link to="/dashboard">
-										<Button
-											variant="outlined"
-											color="primary"
-										>
-											Dashboard
+											Go to 2nd page
 										</Button>
 									</Link>
 								</Grid>
