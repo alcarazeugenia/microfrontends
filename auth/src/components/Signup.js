@@ -108,7 +108,7 @@ export default function SignUp({ onSignIn }) {
 					<Grid container justify="flex-end">
 						<Grid item>
 							<Link to="/auth/signin">
-								Already have an account? Sign in
+								Already have an account? Go to sign in
 							</Link>
 						</Grid>
 					</Grid>
