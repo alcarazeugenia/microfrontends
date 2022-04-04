@@ -2,13 +2,13 @@
 
 install:
 	@echo "Installing auth libraries..."
-	@cd auth && npm install && cd ..
+	@npm install --prefix ./auth
 	@echo "Installing container libraries..."
-	@cd container && npm install && cd ..
+	@npm install --prefix ./container
 	@echo "Installing dashboard libraries..."
-	@cd dashboard && npm install && cd ..
+	@npm install --prefix ./dashboard
 	@echo "Installing marketing libraries..."
-	@cd marketing && npm install && cd ..
+	@npm install --prefix ./marketing
 	@echo "All dependencies installed."
 
 
