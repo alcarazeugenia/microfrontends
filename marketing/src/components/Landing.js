@@ -59,6 +59,16 @@ export default function Album() {
 										</Button>
 									</Link>
 								</Grid>
+								<Grid item>
+									<Link to="/angular">
+										<Button
+											variant="contained"
+											color="primary"
+										>
+											Go to Angular page
+										</Button>
+									</Link>
+								</Grid>
 							</Grid>
 						</div>
 					</Container>
