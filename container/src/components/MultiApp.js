@@ -1,13 +1,12 @@
 import React from "react";
 import AngularApp from "./multiApp/MultiAppLeft";
-import Marketing from "./MarketingApp";
+import ReactApp from "./multiApp/MultiAppRight";
 
 const MultiApp = () => {
 	return (
 		<>
-			<div>I'm multi App!</div>
 			<AngularApp />
-			<Marketing />
+			<ReactApp />
 		</>
 	);
 };

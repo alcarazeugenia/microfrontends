@@ -24,6 +24,8 @@ const devConfig = {
 				angular: "angular@http://localhost:3002/remoteEntry.js",
 				multiAppLeft:
 					"multiAppLeft@http://localhost:3003/remoteEntry.js",
+				multiAppRight:
+					"multiAppRight@http://localhost:3004/remoteEntry.js",
 			},
 			shared: packageJson.dependencies,
 		}),
