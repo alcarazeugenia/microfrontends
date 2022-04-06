@@ -69,6 +69,16 @@ export default function Album() {
 										</Button>
 									</Link>
 								</Grid>
+								<Grid item>
+									<Link to="/multi-framework">
+										<Button
+											variant="contained"
+											color="primary"
+										>
+											Go to multi framework page
+										</Button>
+									</Link>
+								</Grid>
 							</Grid>
 						</div>
 					</Container>

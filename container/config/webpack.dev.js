@@ -22,6 +22,8 @@ const devConfig = {
 				auth: "auth@http://localhost:8082/remoteEntry.js",
 				dashboard: "dashboard@http://localhost:8083/remoteEntry.js",
 				angular: "angular@http://localhost:3002/remoteEntry.js",
+				multiAppLeft:
+					"multiAppLeft@http://localhost:3003/remoteEntry.js",
 			},
 			shared: packageJson.dependencies,
 		}),

@@ -13,6 +13,7 @@ const MarketingLazy = lazy(() => import("./components/MarketingApp"));
 const AuthLazy = lazy(() => import("./components/AuthApp"));
 const DashboardLazy = lazy(() => import("./components/DashboardApp"));
 const AngularLazy = lazy(() => import("./components/AngularApp"));
+const MultiAppLazy = lazy(() => import("./components/MultiApp"));
 
 const generateClassName = createGenerateClassName({
 	productionPrefix: "co",
@@ -49,6 +50,10 @@ export default () => {
 								<DashboardLazy />
 							</Route>
 							<Route path="/angular" component={AngularLazy} />
+							<Route
+								path="/multi-framework"
+								component={MultiAppLazy}
+							/>
 							<Route path="/" component={MarketingLazy} />
 						</Switch>
 					</Suspense>
